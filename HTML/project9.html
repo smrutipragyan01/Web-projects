@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Music Website</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:url('https://via.placeholder.com/1200x800') center/cover no-repeat fixed;
+      color:rgb(1, 14, 22);
+      backdrop-filter:blur(2px);
+    }
+    header{
+      background:rgba(8, 145, 230, 0.6);
+      padding:20px;
+      text-align:center;
+    }
+    main{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:20px;
+      padding:20px;
+    }
+    section,aside{
+      background:rgba(9, 74, 102, 0.653);
+      padding:15px;
+      border-radius:8px;
+    }
+    audio{width:100%; margin-top:10px}
+    .playlist img{width:70px; height:70px; border-radius:8px}
+    .playlist{display:flex; gap:10px; align-items:center; margin-bottom:12px}
+    form{display:flex; flex-direction:column; gap:10px}
+    input,select,button{
+      padding:8px;
+      border:none;
+      border-radius:6px;
+    }
+    button{background:#4f46e5;color:white;font-weight:bold;cursor:pointer}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Music Vibes</h1>
+    <h3>Now Playing: Shape of You — Ed Sheeran</h3>
+    <audio controls>
+      <source src="song1.mp3" type="audio/mpeg" />
+    </audio>
+  </header>
+
+  <main>
+    <section>
+      <h2>Top Artists Playlists</h2>
+
+      <h3>Ed Sheeran</h3>
+      <div class="playlist">
+        <img src="https://via.placeholder.com/70" alt="song cover" />
+        <div>
+          <p>Perfect</p>
+          <audio controls><source src="perfect.mp3" /></audio>
+        </div>
+      </div>
+
+      <div class="playlist">
+        <img src="https://via.placeholder.com/70" alt="song cover" />
+        <div>
+          <p>Photograph</p>
+          <audio controls><source src="photo.mp3" /></audio>
+        </div>
+      </div>
+
+      <h3>Arijit Singh</h3>
+      <div class="playlist">
+        <img src="https://via.placeholder.com/70" alt="song cover" />
+        <div>
+          <p>Tum Hi Ho</p>
+          <audio controls><source src="tumhiho.mp3" /></audio>
+        </div>
+      </div>
+
+      <div class="playlist">
+        <img src="https://via.placeholder.com/70" alt="song cover" />
+        <div>
+          <p>Apna Bana Le</p>
+          <audio controls><source src="apna.mp3" /></audio>
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <h2>Song Suggestions</h2>
+      <form>
+        <label>Your Mood</label>
+        <select>
+          <option>Happy</option>
+          <option>Sad</option>
+          <option>Romantic</option>
+          <option>Energetic</option>
+        </select>
+
+        <label>Favourite Artist</label>
+        <input type="text" placeholder="Enter artist name" />
+
+        <label>Genre</label>
+        <select>
+          <option>Pop</option>
+          <option>Rock</option>
+          <option>Lo-Fi</option>
+          <option>Classical</option>
+        </select>
+
+        <button type="submit">Suggest Songs</button>
+      </form>
+
+      <h3>Recommended for you</h3>
+      <ul>
+        <li>Let Her Go – Passenger</li>
+        <li>Kesariya – Arijit Singh</li>
+        <li>Night Changes – One Direction</li>
+      </ul>
+    </aside>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport"content="width=division-width,initial-scale=1.0">
+        <title>forms</title>
+    </head>
+    <body>
+        <form
+            action="/contact-me">
+            <div>
+                <h5>TRAVEL REQUEST</h5>(for office trip)
+                <p>submit travel requset for approval by manager</p>
+                <hr>
+            </div>
+            EMAIL:<input type="text"><br><hr>
+            NAME: <input type="text"><br><hr>
+            DESTINATION:<input type="text"><br><hr>
+            <h5>start date</h5>
+            date:<input type="date"><br><hr>
+            <h5>end date</h5>
+            date:<input type="date"><br><hr>
+            <h5>price</h5>
+            range:<input type="range"value="price"><br><hr>
+            <h5>trip purpose</h5>
+            <label for="customer meeting">customer meeting</label>
+        <input type="radio"id="customer meeting"
+        name="trip purpose"value="customer meeting"><br>
+
+        <label for="working with team">working with team</label>
+        <input type="radio"id="working with team"
+        name="trip purpose"value="working with team"><br>
+
+        <label for="office fun event">office fun event</label>
+        <input type="radio"id="office fun event"
+        name="trip purpose"value="office fun event"><br>
+
+        <label for="other">other</label>
+        <input type="radio"id="other"
+        name="trip purpose"value="other"><br>
+        <hr>
+        submit:<input type="submit">
+        </form>
+    </body>
+</html>
